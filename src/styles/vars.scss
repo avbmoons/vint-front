@@ -1,0 +1,27 @@
+$width-site: 100vw;
+$width-groups: 30%;
+$width-chat: 70%;
+$width-message: 70%;
+$width-header-box: 90%;
+$width-footer-box: 90%;
+$height-site: 100vh;
+$height-header: 15vh;
+$height-footer: 10vh;
+$height-main: (($height-site)-($height-header)-($height-footer));
+$height-header-box: 80%;
+$height-footer-box: 80%;
+$color-header: #1f1d1d;
+$color-footer: #0f0f0f;
+$color-main: #ededed;
+$color-groups: #918c8c;
+$color-messages: #ebe1e1;
+$color-active-icon: #1c7e7e;
+$color-active-menu: orange;
+$color-text-dark: $color-footer;
+$color-text-light: $color-main;
+$color-text-footer: $color-active-icon;
+$color-link-dark: $color-active-icon;
+$color-link-light: #34e0e0;
+$colorMessageIn: #b0abab;
+$colorMessageOut: yellowgreen;
+

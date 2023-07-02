@@ -1,0 +1,70 @@
+@import "./vars.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+    margin: 0 auto;
+    width: $width-site;
+    min-height: $height-site;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    .App-top {
+        margin: 0 auto;
+        width: $width-site;
+        min-height: $height-main;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        .App-header {
+            margin: 0 auto;
+            width: $width-site;
+            height: $height-header;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+            background-color: $color-header;
+            //border: 1px solid red;
+        }
+        .App-main {
+            margin: 0 auto;
+            width: $width-site;
+            min-height: $height-main;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+            background-color: $color-main;
+            //border: 1px solid green;
+        }
+    }
+    .App-footer {
+        margin: 0 auto;
+        width: $width-site;
+        height: $height-footer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        background-color: $color-footer;
+        //border: 1px solid red;
+        .Menu-item {
+            margin-left: 10%;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            color: $color-text-footer;
+        }
+    }
+}

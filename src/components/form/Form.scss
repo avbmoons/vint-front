@@ -1,0 +1,37 @@
+@import "../../styles/vars.scss";
+
+.Form-submit {
+    margin: 0 auto;
+    width: 90%;
+    //height: 10%;    //
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    .Text-input {
+        padding-left: 20px;
+        width: 85%;
+        //height: 40px;
+        height: 100%;
+        font-size: 16px;
+        color: black;
+        //border: 1px solid yellowgreen;
+        border: none;
+    }
+    .Text-input::placeholder {
+        padding-left: 20px;
+        font-size: 16px;
+        font-style: italic;
+        color: yellowgreen;
+
+    }
+    .Form-button {
+        width: 15%;
+        height: 40px;
+        margin-left: 5px;
+        background-color: yellowgreen;
+        color: white;
+        font-size: 16px;
+        border: 1px solid yellowgreen;
+        border-radius: 5px;
+    }
+}

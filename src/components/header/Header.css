@@ -1,0 +1,41 @@
+.Header-box {
+  margin: 0 auto;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.Header-box .Header-box-left {
+  margin: 0 auto;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.Header-box .Header-box-left .Logo-box {
+  margin: 0 auto;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.Header-box .Header-box-right {
+  margin: 0 auto;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.Header-box .Header-box-right .Header-utils-box {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}/*# sourceMappingURL=Header.css.map */

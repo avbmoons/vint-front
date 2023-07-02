@@ -1,0 +1,30 @@
+@import "../../styles/vars.scss";
+
+.Menu-box {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    //border: 1px solid yellowgreen;
+    .Menu {
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        .Menu-item {
+            margin-left: 10%;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            color: $color-text-light;
+        }
+        .Menu-item:hover {
+            color: yellowgreen;
+        }
+    }
+}

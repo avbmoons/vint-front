@@ -1,0 +1,21 @@
+.Auth-box {
+  margin: 0 auto;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.Auth-box .Auth-link {
+  width: auto;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.Auth-box .Auth-link img {
+  height: 100%;
+  width: auto;
+}/*# sourceMappingURL=Auth.css.map */

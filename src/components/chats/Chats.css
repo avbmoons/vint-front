@@ -1,0 +1,32 @@
+.Chats-box {
+  margin: 0 auto;
+  width: 90%;
+  height: 73.5vh;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.Chats-box .Chats-groups {
+  margin: 0 auto;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  background-color: #918c8c;
+  border: 1px solid #918c8c;
+  border-radius: 5px;
+}
+.Chats-box .Chats-messages {
+  margin: 0 auto;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  background-color: #ebe1e1;
+  border: 1px solid #918c8c;
+  border-radius: 5px;
+}/*# sourceMappingURL=Chats.css.map */

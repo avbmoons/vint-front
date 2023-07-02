@@ -1,0 +1,47 @@
+@import "../../styles/vars.scss";
+
+.Message-box {
+    margin: 10px auto;
+    margin-left: 2%;
+    //margin-left: 38%;
+    width: 60%;
+    //min-height: 10%;
+    height: fit-content;
+    background-color: $colorMessageIn;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    //opacity: 1;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    scroll-snap-align: end;   //
+    //border: 1px solid green;
+    .Message-author {
+        //margin: 0 auto;
+        padding: 5px;
+        text-align: right;
+        font-size: 14px;
+        color: brown;
+    }
+    .Message-text {
+        margin: 0 auto;
+        padding: 5px;
+        width: 90%;
+        text-align: left;
+        word-wrap: break-word;                
+        font-size: 16px;
+        color: $color-header;
+    }
+    .Message-is-out {
+        //margin: 0 auto;
+        padding: 5px;
+        text-align: right;
+        font-size: 14px;
+        color: brown;
+        display: none;
+    }
+}
+
