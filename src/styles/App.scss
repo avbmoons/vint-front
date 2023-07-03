@@ -43,7 +43,7 @@ body {
             min-height: $height-main;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             box-sizing: border-box;
             background-color: $color-main;
             //border: 1px solid green;

@@ -3,7 +3,7 @@
 .Form-submit {
     margin: 0 auto;
     width: 90%;
-    //height: 10%;    //
+    height: 8%;    //
     display: flex;
     justify-content: center;
     box-sizing: border-box;
@@ -17,6 +17,10 @@
         //border: 1px solid yellowgreen;
         border: none;
     }
+    .Text-input:focus {
+        outline: none;
+        border: 3px solid $color-groups;
+    }
     .Text-input::placeholder {
         padding-left: 20px;
         font-size: 16px;
@@ -26,12 +30,13 @@
     }
     .Form-button {
         width: 15%;
-        height: 40px;
+        //height: 40px;
+        height: 100%;
         margin-left: 5px;
         background-color: yellowgreen;
         color: white;
         font-size: 16px;
-        border: 1px solid yellowgreen;
+        border: 3px solid yellowgreen;
         border-radius: 5px;
     }
 }

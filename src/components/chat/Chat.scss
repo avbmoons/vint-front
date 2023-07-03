@@ -1,0 +1,38 @@
+@import "../../styles/vars.scss";
+
+.Chat-box {
+    margin: 5px auto;
+    padding: 10px;
+    width: 95%;
+    min-height: 10%;
+    background-color: $color-chat-box;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    //border: 1px solid red;
+    border-radius: 5px;
+    position: relative;
+    scroll-snap-align: end;
+    .Chat-link {
+        margin: 0 auto;
+        padding-left: 20px;
+        width: 80%;
+        height: 100%;
+        text-decoration: none;
+        text-align: left;
+        color: $color-text-light;
+        font-size: 18px;
+        //border: 1px solid blue;
+    }
+    .Chat-icon {
+        margin: 0 auto;
+        width: 20%;
+        height: 100%;
+        width: auto;
+        //border: 1px solid blue;
+    }
+}
+.Chat-box:hover {
+    background-color: yellowgreen;
+}

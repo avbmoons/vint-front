@@ -1,0 +1,43 @@
+.Form-submit {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.Form-submit .Text-author {
+  display: none;
+  width: 5%;
+  height: 40px;
+  color: brown;
+}
+.Form-submit .Text-input {
+  padding-left: 20px;
+  width: 85%;
+  height: 100%;
+  font-size: 16px;
+  color: black;
+  border: none;
+}
+.Form-submit .Text-input::-moz-placeholder {
+  padding-left: 20px;
+  font-size: 16px;
+  font-style: italic;
+  color: yellowgreen;
+}
+.Form-submit .Text-input::placeholder {
+  padding-left: 20px;
+  font-size: 16px;
+  font-style: italic;
+  color: yellowgreen;
+}
+.Form-submit .Form-button {
+  width: 15%;
+  height: 40px;
+  margin-left: 5px;
+  background-color: yellowgreen;
+  color: white;
+  font-size: 16px;
+  border: 1px solid yellowgreen;
+  border-radius: 5px;
+}/*# sourceMappingURL=FormSubmit.css.map */

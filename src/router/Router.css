@@ -1,0 +1,28 @@
+.Router-box {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  display: none;
+}
+.Router-box .Router-nav {
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+.Router-box .Router-nav .Router-item {
+  margin-left: 10%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: orange;
+}
+.Router-box .Router-nav .Router-item:hover {
+  color: yellowgreen;
+}/*# sourceMappingURL=Router.css.map */

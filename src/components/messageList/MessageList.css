@@ -1,0 +1,13 @@
+.Message-list-box {
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  background-color: #ededed;
+}/*# sourceMappingURL=MessageList.css.map */
