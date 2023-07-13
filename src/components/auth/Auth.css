@@ -1,5 +1,4 @@
 .Auth-box {
-  margin: 0 auto;
   width: 20%;
   height: 100%;
   display: flex;
@@ -12,7 +11,7 @@
   height: 100%;
   text-decoration: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   box-sizing: border-box;
 }
 .Auth-box .Auth-link img {

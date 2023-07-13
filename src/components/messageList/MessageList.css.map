@@ -1,1 +1,1 @@
-{"version":3,"sources":["MessageList.scss","../../styles/vars.scss","MessageList.css"],"names":[],"mappings":"AAEA;EACI,cAAA;EAEA,UAAA;EACA,WAAA;EACA,aAAA;EACA,8BAAA;EAEA,2BAAA;EACA,sBAAA;EACA,kBAAA;EACA,uBAAA;EACA,6BAAA;EACA,yBCDS;ACFb","file":"MessageList.css"}
+{"version":3,"sources":["MessageList.scss","../../styles/vars.scss","MessageList.css"],"names":[],"mappings":"AAEA;EACI,cAAA;EAEA,UAAA;EACA,YAAA;EACA,aAAA;EACA,8BAAA;EAEA,2BAAA;EACA,sBAAA;EACA,kBAAA;EACA,uBAAA;EACA,6BAAA;EACA,yBCCS;ACJb","file":"MessageList.css"}

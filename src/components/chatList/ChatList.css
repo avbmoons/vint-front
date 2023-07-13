@@ -1,13 +1,45 @@
-.Chat-list-box {
+.Chats-list-box {
   margin: 0 auto;
-  width: 100%;
-  min-height: 10%;
+  width: 90%;
+  height: 78.4vh;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.Chats-list-box .Chats-list-groups {
+  margin: 0 auto;
+  width: 40%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   box-sizing: border-box;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
   background-color: #918c8c;
+  border: 1px solid #918c8c;
+  border-radius: 5px;
+}
+.Chats-list-box .Chats-list-groups .Chats-list-block {
+  height: 90%;
+  overflow-y: auto;
+}
+.Chats-list-box .Chats-list-groups .Chats-list-form {
+  height: 10%;
+}
+.Chats-list-box .Chats-list-groups .Chats-list-form Form {
+  height: 100%;
+}
+.Chats-list-box .Chats-list-messages {
+  margin: 0 auto;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #ebe1e1;
+  border: 1px solid #ebe1e1;
+  border-radius: 5px;
+}
+.Chats-list-box .Chats-list-messages Outlet {
+  width: 100%;
 }/*# sourceMappingURL=ChatList.css.map */

@@ -1,10 +1,11 @@
-import {v4 as uuidv4} from "uuid";
 import "./Chat.scss";
-//import chatIcon from "../../assets/icons/chatIcon.png";
+import { Link } from "react-router-dom";
 
 export const Chat = ({id, chatName, chatIcon}) => {
-    return <div className="Chat-box" key={id=uuidv4()} >
-        <a className="Chat-link" href="./#" >{chatName}</a>
+    return <div className="Chat-box" key={id}>
+        <Link className="Chat-link" to={`/chats/${id}`} >{chatName}</Link>
         <img className="Chat-icon" src={chatIcon} alt="icon"></img>
     </div>
 }
+
+

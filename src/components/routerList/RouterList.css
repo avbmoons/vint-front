@@ -1,21 +1,29 @@
 .Router-box {
   margin: 0 auto;
-  width: 80%;
-  height: 100%;
+  width: 100%;
+  height: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
+  background-color: #1f1d1d;
 }
 .Router-box .Router-nav {
   margin: 0 auto;
   width: 80%;
   height: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: right;
   box-sizing: border-box;
 }
 .Router-box .Router-nav .Router-item {
+  margin-left: 10%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ededed;
+}
+.Router-box .Router-nav .Router-item-active {
   margin-left: 10%;
   text-align: center;
   text-decoration: none;
@@ -24,4 +32,4 @@
 }
 .Router-box .Router-nav .Router-item:hover {
   color: yellowgreen;
-}/*# sourceMappingURL=Router.css.map */
+}/*# sourceMappingURL=RouterList.css.map */

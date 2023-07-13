@@ -1,7 +1,4 @@
 import {v4 as uuidv4} from "uuid";
-//import chatIcon from "../assets/icons/icon-chat.png";
-//import "../"
-//import chatIcon from "../assets/icons/chatIcon.png";
 
 export const INIT_MESSAGE=[
     {
@@ -9,24 +6,6 @@ export const INIT_MESSAGE=[
         author: "BOT",
         text:"Hi, lets talk!",
         isOut: "false",
-    },
-];
-
-export const INIT_CHAT=[
-    {
-        id:uuidv4(),
-        chatName:"First chat",
-        chatIcon:"../../assets/icons/chatIcon.png",
-    },
-    {
-        id:uuidv4(),
-        chatName:"Second chat",
-        chatIcon:"../../assets/icons/chatIcon.png",
-    },
-    {
-        id:uuidv4(),
-        chatName:"Third chat",
-        chatIcon:"../../assets/icons/chatIcon.png",
     },
 ];
 
@@ -47,9 +26,55 @@ export const ROUTES={
     HOME: "/",
     PROFILE: "/profile",
     CHATS: "/chats",
-    CHAT: "/chats/:chatId?",
+    CHAT: ":chatId",
     MESSAGES: "",
     NEWS: "/news",
     NO_CHAT: "/chats/no-chat",
     NOT_FOUND: "/not-found",
 };
+
+export const chats=[
+    {
+        id:uuidv4(),
+        chatName:"Chat-1",
+        chatIcon:"../../assets/icons/chatIcon.png",
+    },
+    {
+        id:uuidv4(),
+        chatName:"Chat-2",
+        chatIcon:"../../assets/icons/chatIcon.png",
+    },
+    {
+        id:uuidv4(),
+        chatName:"Chat-3",
+        chatIcon:"../../assets/icons/chatIcon.png",
+    },
+    {
+        id:uuidv4(),
+        chatName:"Chat-4",
+        chatIcon:"../../assets/icons/chatIcon.png",
+    },
+];
+
+export const initialChats=[
+    {
+        id:uuidv4(),
+        chatName:"Chat 1",
+        chatIcon:"../../assets/icons/chatIcon.png",
+    },
+    {
+        id:uuidv4(),
+        chatName:"Chat 2",
+        chatIcon:"../../assets/icons/chatIcon.png",
+    },
+    {
+        id:uuidv4(),
+        chatName:"Chat 3",
+        chatIcon:"../../assets/icons/chatIcon.png",
+    },
+    {
+        id:uuidv4(),
+        chatName:"Chat 4",
+        chatIcon:"../../assets/icons/chatIcon.png",
+    },
+];

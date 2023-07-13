@@ -1,49 +1,50 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./Chats.scss";
 import {v4 as uuidv4} from "uuid";
 import { MessageList } from "../../components/messageList/MessageList";
-import { ChatList } from "../../components/chatList/ChatList";
-import {AUTHORS, INIT_CHAT, INIT_MESSAGE} from "../../utils/constants";
-import { BOT_MESSAGE } from "../../utils/constants";
+import { AUTHORS } from "../../utils/constants";
 import { Form } from "../../components/form/Form";
+import { useParams } from "react-router-dom";
 
-export const Chats = () => {
-    const[messageList, setMessageList]=useState(INIT_MESSAGE);
-    const[chatList, setChatList]=useState(INIT_CHAT);
-
-    function handleAddMessage(text) {
-        const newMessage={
-            id:uuidv4(),
-            author:AUTHORS.authorName="HUMAN",
-            text:text,
-            isOut:"true",
-        };
-        setMessageList((prevMessageList)=>[...prevMessageList, newMessage]);
-    };
+export const Chats = ({messages, onAddMessage}) => {
+    const { chatId } = useParams();
+    console.log({chatId});
+    
+    const handleSubmitMessage=(text)=>{
+        const newMessage={id:uuidv4(), author:AUTHORS.authorName='HUMAN', text, isOut:"true",};
+        onAddMessage(newMessage, chatId);
+    }
 
     useEffect(()=>{
         let timer;
-        if (messageList[messageList.length-1].author!=="BOT") {
+        if (messages[chatId]?.[messages[chatId].length-1]?.author!=='BOT') {
             timer=setTimeout(()=>{
-                setMessageList([...messageList, BOT_MESSAGE]);
+                onAddMessage({
+                    id:uuidv4(),
+                    author:'BOT',
+                    text:"Thanks! So, lets keep...",
+                    isOut:"false",
+                }, chatId);
             }, 1500);
         }
         return ()=>{
             clearTimeout(timer);
             console.log('timer fresh');
         }
-    },[messageList]);
-    return <div className="Chats-box">
-        <div className="Chats-groups">
-            <ChatList chatList={chatList} setChatList={setChatList} />
-        </div>
+    },[messages]);
+
+    return <main>
+    <div className="Chats-box">
         <div className="Chats-messages">
-            {/* <Message text={text} /> */}
-            <MessageList messageList={messageList} setMessageList={setMessageList} />
-            {/* <FormSubmit messageList={messageList} setMessageList={setMessageList} /> */}
-            <Form onSubmit={handleAddMessage} />
+            <div className="Chats-message-list">
+               <MessageList messages={messages[chatId]} /> 
+            </div>
+            <div className="Chats-message-form">
+               <Form onSubmit={handleSubmitMessage} /> 
+            </div>            
         </div>
     </div>
+    </main>
 };
 
 export default Chats;

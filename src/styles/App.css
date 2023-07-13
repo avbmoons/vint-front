@@ -19,7 +19,7 @@ body {
 .App .App-top {
   margin: 0 auto;
   width: 100vw;
-  min-height: 75vh;
+  min-height: 80vh;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@ body {
 .App .App-top .App-header {
   margin: 0 auto;
   width: 100vw;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +39,7 @@ body {
 .App .App-top .App-main {
   margin: 0 auto;
   width: 100vw;
-  min-height: 75vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

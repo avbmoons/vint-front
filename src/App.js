@@ -1,5 +1,4 @@
 import { Router } from "./router/Router";
-import { Chats } from "./components/chats";
 import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
 import "./styles/App.scss";
@@ -15,7 +14,6 @@ function App() {
         <Header />
         </header>
         <main className="App-main">
-          {/* <Chats /> */}
           <Router />
         </main>
       </div>

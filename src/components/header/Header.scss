@@ -19,12 +19,17 @@
         //border: 1px solid blueviolet;
         .Logo-box {
             margin: 0 auto;
-            width: 90%;
-            height: 80%;
+            width: 100%;
+            height: 100%;
             display: flex;
             justify-content: flex-start;
             box-sizing: border-box;
             //border: 1px solid grey;
+            img {
+                height: 100%;
+                width: auto;
+                //border: 1px solid yellowgreen;
+            }
         }
     }
     .Header-box-right {
@@ -39,7 +44,7 @@
         .Header-utils-box {
             //margin: 0 auto;
             width: 100%;
-            height: 80%;
+            height: 100%;
             display: flex;
             justify-content: flex-end;
             box-sizing: border-box;

@@ -1,10 +1,7 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "./Form.scss";
 
 export const Form = ({ onSubmit }) => {
-
-    // const ref=useRef();
-    // const focus=()=>{ref.current.focus()};
 
     const [value, setValue] = useState("");
 
@@ -15,7 +12,6 @@ export const Form = ({ onSubmit }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        //focus();
         setValue("");
         onSubmit(value);
     };
